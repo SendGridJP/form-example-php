@@ -1,6 +1,11 @@
 <?php
 require 'vendor/autoload.php';
-Dotenv::load(__DIR__);
+try {
+  $dotenv = new Dotenv\Dotenv(__DIR__);
+  $dotenv->load();
+} catch (Exception $e) {
+  error_log($e->getMessage());
+}
 
 $api_key           = $_ENV['API_KEY'];
 $from              = $_ENV['FROM'];

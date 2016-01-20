@@ -8,6 +8,6 @@
   "minimum-stability" : "dev",
   "require": {
     "sendgrid/sendgrid": "~4.0",
-    "vlucas/phpdotenv": "~1.0"
+    "vlucas/phpdotenv": "2.2.0"
   }
 }
